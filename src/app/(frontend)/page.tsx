@@ -7,6 +7,7 @@ import { fileURLToPath } from 'url'
 import config from '@/payload.config'
 import './styles.css'
 import { Button } from '@/components/ui/button'
+import HeroSection from '@/components/hero-section'
 
 export default async function HomePage() {
   const headers = await getHeaders()
@@ -18,8 +19,7 @@ export default async function HomePage() {
 
   return (
     <div>
-      <h1 className="text-7xl">Hello World!</h1>
-      <Button>Submit</Button>
+      <HeroSection></HeroSection>
     </div>
   )
 }
